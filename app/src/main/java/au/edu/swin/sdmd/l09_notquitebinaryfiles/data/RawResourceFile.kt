@@ -9,7 +9,6 @@ object RawResourceFile {
    *  This file is located in the folder <code>res/raw</code>
    */
   fun readContent(resources: Resources, fileRid: Int) : String {
-    return resources.openRawResource(fileRid)
-      .bufferedReader().readText()
+    return resources.openRawResource(fileRid).bufferedReader().readText()
   }
 }

@@ -32,6 +32,7 @@ object HistoryFile {
                 .bufferedReader().useLines {
                     it.toList()
                 }
+            /* to show the most recent ones on top */
             history.asReversed()
         } else { // if file does not exist, return an empty list
             emptyList()

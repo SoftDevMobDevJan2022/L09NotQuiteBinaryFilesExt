@@ -9,10 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.L09NotQuiteBinaryFiles">
-        <!-- Use this to have a more complex app with fragments and navigation menu -->
-        <activity android:name=".MainActivity" />
-        <!-- Use these to have a basic app -->
-<!--        <activity android:name=".MainActivityBasic" />-->
         <activity
             android:name=".ui.history.HistoryActivity"
             android:exported="false" />
@@ -22,12 +18,15 @@
         <activity
             android:name=".ui.process.ProcessActivity"
             android:exported="false" />
+        <!-- Use this to have a more complex app with fragments and navigation menu -->
+<!--        <activity android:name=".MainActivity" />-->
+        <!-- Use these to have a basic app -->
+        <activity android:name=".MainActivityBasic" />
         <activity
-            android:name=".MainActivityBasic"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

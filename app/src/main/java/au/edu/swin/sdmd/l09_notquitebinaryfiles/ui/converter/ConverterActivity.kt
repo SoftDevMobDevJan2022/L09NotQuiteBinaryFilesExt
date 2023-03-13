@@ -9,6 +9,10 @@ import au.edu.swin.sdmd.l09_notquitebinaryfiles.R
 import au.edu.swin.sdmd.l09_notquitebinaryfiles.data.HistoryFile
 import au.edu.swin.sdmd.l09_notquitebinaryfiles.data.SharedPrefFile
 
+/**
+ * @overview: convert decimal to binary and display the result.
+ * Also record the conversion into a history file.
+ */
 class ConverterActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -25,7 +29,7 @@ class ConverterActivity : AppCompatActivity() {
         tvResult.text = sBinary
 
         /**
-         * This is where we update our files.
+         * make this the last input in the preference file.
          */
         SharedPrefFile.updateSharedPrefs(this,
           getString(R.string.preference_file_key),

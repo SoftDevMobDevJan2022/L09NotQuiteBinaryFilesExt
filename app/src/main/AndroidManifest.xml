@@ -21,9 +21,9 @@
         <!-- Use this to have a more complex app with fragments and navigation menu -->
 <!--        <activity android:name=".MainActivity" />-->
         <!-- Use these to have a basic app -->
-        <activity android:name=".MainActivityBasic" />
+        <activity android:name=".MainActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivityBasic"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

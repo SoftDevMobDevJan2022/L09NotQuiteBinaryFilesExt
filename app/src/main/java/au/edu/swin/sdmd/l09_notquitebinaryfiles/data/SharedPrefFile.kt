@@ -2,6 +2,9 @@ package au.edu.swin.sdmd.l09_notquitebinaryfiles.data
 
 import android.content.Context
 
+/**
+ * @overview Provides an API for manipulating shared-preference file
+ */
 object SharedPrefFile {
   /**
    * @effects
